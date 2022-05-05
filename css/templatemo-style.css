@@ -788,13 +788,22 @@ textarea.form-control {
 }
 .testimonials-section .item p {
   font-size: 17px;
-  font-style: italic;
+  font-style: normal;
 }
 .testimonials-section .item .price p {
   font-size: 24px;
-  font-style: italic;
+  font-style: normal;
   margin-top: 50px;
 }
+.slide-three .testimonials-section .item .price p{
+  font-size: 36px;
+  margin-top: 0px;
+}
+.slide-three .testimonials-section .item p {
+  font-size: 24px;
+  font-style: normal;
+}
+
 .testimonials-section .content {
   padding-right: 30px;
 }
@@ -947,21 +956,22 @@ textarea.form-control {
  }
  .full-screen-portfolio .portfolio-item h1 {
   position: relative;
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #fff;
-  display: inline-block;
-  padding-left: 20px;
-  line-height: 15px;
-  transform: translateY(25px);
+  display: block;
+  padding-left: 0;
+  line-height: normal;
+  transform: translateY(0);
   transition: .5s ease-in-out;
   letter-spacing: 0.5px;
+  margin: 0px;
 }
 .full-screen-portfolio .portfolio-item p {
   padding-left: 20px;
   font-weight: 300!important;
   letter-spacing: 0.5px;
-  font-size: 14px;
+  font-size: 20px;
   color: #fff;
   opacity: 0;
   transform: translateY(10px);
@@ -988,7 +998,7 @@ textarea.form-control {
   text-transform: uppercase;
  }
 
- .full-screen-portfolio .portfolio-item {
+.full-screen-portfolio .portfolio-item {
  text-align: center;
  line-height: 150%;
  text-transform: lowercase;
@@ -1284,15 +1294,40 @@ textarea.form-control {
 }
 
 .portfolio-item .hover-effect .hover-content {
-    position: absolute;
-    text-align: left;
-    width: 100%;
-    bottom: 5px;
-    left: 0;
-    z-index: 99;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  z-index: 99;
+  background: rgb(0 0 0 / 67%);
+  height: 100px;
+  right: 0;
+  margin: 0 auto;
+  padding-top: 20px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-
-
+.full-screen-portfolio.slidefour .portfolio-item .thumb:hover .hover-content{
+  border-radius: 0px;
+  height: 100%;
+  background: rgb(0 0 0 / 67%);
+  text-align: center;
+  padding-top: 90px;
+}
+.portfolio-item .hover-effect .hover-content {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  z-index: 99;
+  background: rgb(0 0 0 / 67%);
+  height: 110px;
+  right: 0;
+  margin: 0 auto;
+  padding-top: 20px;
+}
 .grid-portfolio .portfolio-item h1 {
   position: relative;
   font-size: 22px;
@@ -1425,6 +1460,258 @@ h1, h2 {
   font-size: 72px;
   margin-bottom: 20px;
 }
+.section-five .item{
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  border-radius: 6px;
+  padding: 20px 50px;
+}
+.section-five .item h5{
+  font-size: 18px;
+  text-transform: lowercase;
+  font-weight: normal;
+}
+.section-five .item .thumb-img{
+  max-width: 200px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+.form-container{
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px 40px 10px 40px;
+}
+.form-container header{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.form-container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.img-full{
+  width: 100%;
+}
+.form-outer form .page .title {
+  text-align: left;
+  font-size: 48px;
+  font-weight: 500;
+  color: #003da0;
+}
+.title-text {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4e506d;
+  line-height: normal;
+  margin: 10px 0 30px 0;
+}
+.list-item {
+  color: #003da0;
+  text-align: left;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  line-height: normal;
+  font-weight: 500;
+}
+.list-item img {
+  max-width: 24px;
+  margin: 10px 10px 10px 0px;
+}
+.form-outer form .page .field{
+  width: 330px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+form .page .field .label{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+  color: #000;
+}
+form .page .field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+form .page .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+form .page .field button {
+  width: 100%;
+  height: calc(100% + 30px);
+  border: none;
+  background: #f1f5ff;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #71bc61;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+  transition: 0.5s ease;
+}
+form .page .field button:hover{
+  background: #f1f5ff;
+}
+form .page .btns button{
+  margin-top: -20px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+}
+.form-container .progress-bar{
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+.form-container .progress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.form-container .progress-bar .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.progress-bar .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.progress-bar .step .bullet.active{
+  border-color: #d43f8d;
+  background: #d43f8d;
+}
+.progress-bar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar .step .bullet.active span{
+  display: none;
+}
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -51px;
+  height: 3px;
+  width: 44px;
+  background: #262626;
+}
+.progress-bar .step .bullet.active:after{
+  background: #d43f8d;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+  display: none;
+}
+.progress-bar .step p.active{
+  color: #d43f8d;
+  transition: 0.2s linear;
+}
+.progress-bar .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar .step .check.active{
+  display: block;
+  color: #fff;
+}
+.form-outer form .page {
+  color: #000;
+  text-align: left;
+}
+.navbar {
+  min-width: 110px;
+}
+.navigation-row {
+  max-width: 25px;
+}
+a#logo {
+  background: #fff;
+  border-radius: 100%;
+  padding: 7px;
+}
+@media (max-width: 767px){
+.slide-three .testimonials-section .item .price p {
+  font-size: 18px;
+}
+.slide-three .testimonials-section .item p {
+  font-size: 14px;
+}
+.slide-three .section-inner {
+  padding: 80px 10px 0;
+}  
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+.slide-three .testimonials-section .content-box-center {
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  max-width: 90%;
+  padding: 20px;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+.content-box-center {
+  padding: 20px;
+}
+}
 @media (min-width: 768px) and (max-width: 1199px){
   .full-screen-portfolio .portfolio-item h1 {
     font-size: 16px;
@@ -1443,8 +1730,24 @@ h1, h2 {
 .section-inner {
   padding: 20px 80px 0;
 }
+.slide-three .testimonials-section .item .price p {
+  font-size: 26px;
+ }
+ .slide-three .testimonials-section .item p {
+  font-size: 14px;
+ }
 }
 @media (min-width: 1200px){
+  .navbar {
+    min-width: 150px;
+}  
+  .slide-three .testimonials-section .content-box-center {
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    max-width: 90%;
+    padding: 20px;
+  } 
   h1, h2 {
     font-size: 32px;
  }
@@ -1456,8 +1759,20 @@ h1, h2 {
   font-size: 72px;
   margin-bottom: 20px;
 }
+.slide-three .testimonials-section .item .price p {
+  font-size: 26px;
+ }
+ .slide-three .testimonials-section .item p {
+  font-size: 14px;
+ }
 }
 @media (min-width: 1600px){
+  .slide-three .testimonials-section .item .price p {
+    font-size: 36px;
+   }
+   .slide-three .testimonials-section .item p {
+    font-size: 24px;
+   }  
   h1, h2 {
     font-size: 32px;
  }
